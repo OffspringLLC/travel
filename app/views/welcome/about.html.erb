@@ -4,10 +4,10 @@
   }
 </style>
 
-<h1>About Me</h1>
-<p>Lots of interesting stuffs.</p>
-
 <h1>About me</h1>
 <p>Lots of interesting stuffs.</p>
 <p>My favorite color is <%= @color %></p>
 <p>My shoe size is <%= @size %></p>
+
+<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger" %>

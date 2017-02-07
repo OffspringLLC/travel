@@ -9,6 +9,8 @@
   <% end %>
 </ul>
 
-<%= image_tag "chile.jpg" %>
-<%= image_tag "bolivia.jpg" %>
-<%= image_tag "croatia.jpg" %>
+<ul>
+<% @travel_pics.each do |pic| %>
+  <%= image_tag pic, class: "img-responsive" %>
+<% end %>
+<ul>
